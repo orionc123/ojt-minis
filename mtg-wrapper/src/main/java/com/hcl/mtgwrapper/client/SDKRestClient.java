@@ -21,7 +21,9 @@ public class SDKRestClient {
 
     @PostConstruct
     public void init(){
+        MTGAPI.setConnectTimeout(60);
         MTGAPI.setReadTimeout(60);
+        MTGAPI.setWriteTimeout(60);
     }
 
     @GetMapping("card/{id}")
