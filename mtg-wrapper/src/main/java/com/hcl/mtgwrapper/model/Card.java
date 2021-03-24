@@ -5,7 +5,6 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import io.magicthegathering.javasdk.resource.ForeignData;
 import io.magicthegathering.javasdk.resource.Legality;
 import io.magicthegathering.javasdk.resource.Ruling;
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -14,7 +13,6 @@ import java.math.BigDecimal;
 
 @Data
 @NoArgsConstructor
-@AllArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Card implements Serializable {
     String name;
